@@ -69,7 +69,7 @@ pipeline {
             steps {
                 echo 'Deploying to DockerHub...'
                 script {
-                    bat "docker login -u stephane723 -p Brice2.011"
+                    bat "docker login -u stephane723 -p Brice2.01"
                     bat "docker tag sum-image stephane723E/sum-image:latest"
                     bat "docker push stephane723/sum-image:latest"
                 }
